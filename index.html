@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./dreamdeal.css">
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <!-- make a app sense -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <body>
+        <div class="row">
+            <nav class="col-xs-12 navbar navbar-default">
+                <div class="container-fluid"></div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">DreamDeal</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="btn" tabindex="0" data-trigger="focus" title="Site QRCode" data-container="body" data-toggle="popover" data-placement="bottom" data-content='<img class="site-qrcode" src="https://z3.ax1x.com/2021/09/04/h2VlGR.png"/>'>QRCode</a>                   
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">简体中文</a></li>
+                              <li><a href="#">English</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <form class="col-xs-8 form-horizontal">
+                <hr>
+                <div class="form-group">
+                    <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">Please select region:</label>
+                    <div class="col-sm-8">
+                        <select class="form-control">
+                            <option>Beijing</option>
+                            <option>Shanghai</option>
+                            <option>Shenzhen</option>
+                            <option>Guangzhou</option>
+                            <option>Chengdu</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="inputWeight" class="col-sm-4 control-label" id="inputWeightLabel">Please enter the weight:</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" id="inputWeight" placeholder="Weight/kg">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">Please enter the size:</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" id="inputLength" placeholder="Length/cm">
+                        <hr>
+                        <input type="number" class="form-control" id="inputWidth" placeholder="Width/cm">
+                        <hr>
+                        <input type="number" class="form-control" id="inputHeight" placeholder="Height/cm">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="inputCount" class="col-sm-4 control-label" id="inputCountLabel">Please enter count:</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" id="inputCount" placeholder="Count">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textFare" class="col-sm-4 control-label" id="textFareLabel">The fare:</label>
+                    <div class="col-sm-8">
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CNY - ¥</label>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
+                        <br>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CYM - RM</label>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10"><button type="submit" class="btn btn-primary btn-block">Calculate Now</button></div>
+                   
+                </div>
+            </form>
+            <div class="col-xs-2"></div>
+        </div>
+    </body>
+    <script>
+        $('[data-toggle="popover"]').popover({
+            trigger: 'focus',
+            html: true
+        });
+    </script>
+</html>
