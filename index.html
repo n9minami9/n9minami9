@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <title>Dream Deal Service</title>
         <meta charset="utf-8"> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
@@ -21,13 +22,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">DreamDeal</a>
+                    <a class="navbar-brand" href="#">Dream Deal Service</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="btn" tabindex="0" data-trigger="focus" title="Site QRCode" data-container="body" data-toggle="popover" data-placement="bottom" data-content='<img class="site-qrcode" src="https://z3.ax1x.com/2021/09/04/h2NzLD.png"/>'>QRCode</a>                   
+                            <a class="btn" tabindex="0" data-trigger="focus" title="Dream Deal Service" data-container="body" data-toggle="popover" data-placement="bottom" data-content='<img class="site-qrcode" src="https://z3.ax1x.com/2021/09/04/h2NzLD.png"/>'>Share Me</a>                   
                         </li>
                         <li class="dropdown">
                             <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span></a>
@@ -46,14 +47,23 @@
             <form class="col-xs-8 form-horizontal">
                 <hr>
                 <div class="form-group">
+                    <label for="inputType" class="col-sm-4 control-label" id="inputRegionLabel">Please select type:</label>
+                    <div class="col-sm-8">
+                        <select class="form-control">
+                            <option>Air Transport - Normal</option>
+                            <option>Air Transport - Sensibility</option>
+                            <option>Marine Shipping - Big Package</option>
+                            <option>Marine Shipping - Small Package</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
                     <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">Please select region:</label>
                     <div class="col-sm-8">
                         <select class="form-control">
-                            <option>Beijing</option>
-                            <option>Shanghai</option>
-                            <option>Shenzhen</option>
-                            <option>Guangzhou</option>
-                            <option>Chengdu</option>
+                            <option>Sabah</option>
+                            <option>Sarawak</option>
                         </select>
                     </div>
                 </div>
