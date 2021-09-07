@@ -78,7 +78,12 @@
                     <label for="inputWeight" class="col-sm-4 control-label" id="inputWeightLabel">Please enter the weight:</label>
                     <div class="col-sm-8">
                         <input id="numberInputWeight" type="number" class="form-control" id="inputWeight" placeholder="Weight/kg">
+                        <div id="warningWeight" class="alert alert-warning alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                        </div>
                     </div>
+                    
                 </div>
                 <hr>
                 <div class="form-group">
@@ -125,12 +130,14 @@
 
         $('#calcButton').click(function(){
             toastr.options.positionClass = 'toast-top-right';
+            toastr.warning('只能选择一行进行编辑');
+
             var transType = $('#comboxTransType').prop('selectedIndex');
             var regionType = $('#comboxRegionType').prop('selectedIndex');
 
             var weightVal = $('#numberInputWeight').val();
             if (weightVal.length <= 0) {
-                toastr.info('Are you the 6 fingered man?');
+                $('#warningWeight').alert();
                 return;
             }
 
