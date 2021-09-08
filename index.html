@@ -54,8 +54,8 @@
                         <select id="comboxTransType" class="form-control">
                             <option value="0">Air Transport - Normal</option>
                             <option value="1">Air Transport - Sensibility</option>
-                            <option value="2">Marine Shipping - Big Package</option>
-                            <option value="3">Marine Shipping - Small Package</option>
+                            <option value="2">Marine Shipping - Small Package</option>
+                            <option value="3">Marine Shipping - Big Package</option>
                         </select>
                     </div>
                 </div>
@@ -64,10 +64,10 @@
                     <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">Please select region:</label>
                     <div class="col-sm-8">
                         <select id="comboxRegionType" class="form-control">
-                            <option>Sabah</option>
-                            <option>Sarawak</option>
-                            <option>Sabah Others</option>
-                            <option>Sarawak Others</option>
+                            <option value="0">Sabah</option>
+                            <option value="1">Sarawak</option>
+                            <option value="2">Sabah Others</option>
+                            <option value="3">Sarawak Others</option>
                         </select>
                     </div>
                 </div>
@@ -76,47 +76,46 @@
                     <label for="inputWeight" class="col-sm-4 control-label" id="inputWeightLabel">Please enter the weight:</label>
                     <div id="inputWeigetDiv" class="col-sm-8">
                         <input id="numberInputWeight" type="number" class="form-control" id="inputWeight" placeholder="Weight/kg">
-                        <!--
-                        <div id="warningWeight" class="alert alert-warning alert-dismissible" role="alert" >
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <strong>Warning!</strong> Better check yourself, you're not looking too good.
-                        </div>
-                        -->
                     </div>
-                    
                 </div>
                 <hr>
                 <div class="form-group">
                     <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">Please enter the size:</label>
                     <div class="col-sm-8">
-                        <input type="number" class="form-control" id="inputLength" placeholder="Length/cm">
+                        <input id="numberInputLength" type="number" class="form-control" id="inputLength" placeholder="Length/cm">
                         <hr>
-                        <input type="number" class="form-control" id="inputWidth" placeholder="Width/cm">
+                        <input id="numberInputWidth" type="number" class="form-control" id="inputWidth" placeholder="Width/cm">
                         <hr>
-                        <input type="number" class="form-control" id="inputHeight" placeholder="Height/cm">
+                        <input id="numberInputHeight" type="number" class="form-control" id="inputHeight" placeholder="Height/cm">
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
                     <label for="inputCount" class="col-sm-4 control-label" id="inputCountLabel">Please enter count:</label>
                     <div class="col-sm-8">
-                        <input type="number" class="form-control" id="inputCount" placeholder="Count">
+                        <input id="numberInputCount" type="number" class="form-control" id="inputCount" placeholder="Count">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="textFare" class="col-sm-4 control-label" id="textFareLabel">The fare:</label>
                     <div class="col-sm-8">
-                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CNY - ¥</label>
-                        <label for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">MYR - RM</label>
+                        <label id="textCYM" for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
                         <br>
-                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CYM - RM</label>
-                        <label for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CNY - ¥</label>
+                        <label id="textCNY" for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textFare" class="col-sm-4 control-label" id="textFareLabel">Current exchange rate:</label>
+                    <div class="col-sm-8">
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CYM - CNY, </label>
+                        <label id="textExchangeRate" for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10"><input id="calcButton" type="button" class="btn btn-primary btn-block" value="Calculate Now"></input></div>
-                   
                 </div>
             </form>
             <div class="col-xs-2"></div>
