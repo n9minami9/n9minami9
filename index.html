@@ -5,14 +5,12 @@
         <meta charset="utf-8">        
         <!-- make a app sense -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/dreamdeal.css">
 
-        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js" ></script>
         <script src="js/dreamdeal.js"></script>
     </head>
     <body>
@@ -76,12 +74,14 @@
                 <hr>
                 <div class="form-group">
                     <label for="inputWeight" class="col-sm-4 control-label" id="inputWeightLabel">Please enter the weight:</label>
-                    <div class="col-sm-8">
+                    <div id="inputWeigetDiv" class="col-sm-8">
                         <input id="numberInputWeight" type="number" class="form-control" id="inputWeight" placeholder="Weight/kg">
-                        <div id="warningWeight" class="alert alert-warning alert-dismissible" role="alert">
+                        <!--
+                        <div id="warningWeight" class="alert alert-warning alert-dismissible" role="alert" >
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <strong>Warning!</strong> Better check yourself, you're not looking too good.
                         </div>
+                        -->
                     </div>
                     
                 </div>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-10"><button id="calcButton" type="submit" class="btn btn-primary btn-block">Calculate Now</button></div>
+                    <div class="col-sm-10"><input id="calcButton" type="button" class="btn btn-primary btn-block" value="Calculate Now"></input></div>
                    
                 </div>
             </form>
@@ -123,28 +123,9 @@
         </div>
     </body>
     <script>
-        $('[data-toggle="popover"]').popover({
-            trigger: 'focus',
-            html: true
-        });
 
-        $('#calcButton').click(function(){
-            toastr.options.positionClass = 'toast-top-right';
-            toastr.warning('只能选择一行进行编辑');
 
-            var transType = $('#comboxTransType').prop('selectedIndex');
-            var regionType = $('#comboxRegionType').prop('selectedIndex');
-
-            var weightVal = $('#numberInputWeight').val();
-            if (weightVal.length <= 0) {
-                $('#warningWeight').alert();
-                return;
-            }
-
-            console.log("transType = " + transType);
-            console.log("regionType = " + regionType);
-            console.log("weightVal = " + weightVal);
-        });
+        //document.getElementById("calcButton").οnclick = ;
 
     </script>
 </html>
