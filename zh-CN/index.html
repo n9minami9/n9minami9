@@ -5,13 +5,13 @@
         <meta charset="utf-8">        
         <!-- make a app sense -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/dreamdeal.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../css/dreamdeal.css">
 
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js" ></script>
-        <script src="js/dreamdeal.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js" ></script>
+        <script src="../js/dreamdeal.js"></script>
     </head>
     <body>
         <div class="row">
@@ -30,13 +30,13 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="btn" tabindex="0" data-trigger="focus" title="Dream Deal Service" data-container="body" data-toggle="popover" data-placement="bottom" data-content='<img class="site-qrcode" src="https://z3.ax1x.com/2021/09/04/h2NzLD.png"/>'>Share Me</a>                   
+                            <a class="btn" tabindex="0" data-trigger="focus" title="Dream Deal Service" data-container="body" data-toggle="popover" data-placement="bottom" data-content='<img class="site-qrcode" src="https://z3.ax1x.com/2021/09/04/h2NzLD.png"/>'>分享</a>                   
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span></a>
+                            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">语言<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                              <li><a href="./zh-CN/index.html">简体中文</a></li>
-                              <li><a href="./index.html">English</a></li>
+                              <li><a href="./index.html">简体中文</a></li>
+                              <li><a href="../index.html">English</a></li>
                             </ul>
                           </li>
                     </ul>
@@ -48,100 +48,100 @@
             <div class="col-xs-2"></div>
             <form class="col-xs-8 form-horizontal">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Air Transport - Normal</div>
+                    <div class="panel-heading">东马空运 - 普货</div>
                     <div class="list-group">
                         <div id="SabahABX" class="list-group-item"></div>
                         <div id="SarawakABX" class="list-group-item"></div>
                     </div>
                 </div>
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Air Transport - Sensibility</div>
+                    <div class="panel-heading">东马空运 - 敏感货</div>
                     <div class="list-group">
                         <div id="SabahSarawakABX" class="list-group-item"></div>
                     </div>
                 </div>
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Marine Shipping - Small Package</div>
+                    <div class="panel-heading">东马海运 - 海运小包</div>
                     <div class="list-group">
                         <div id="ABX" class="list-group-item"></div>
                     </div>
                 </div>
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Marine Shipping - Big Package</div>
+                    <div class="panel-heading">东马海运 - 海运大包</div>
                     <div class="list-group">
                         <div id="SabahKKSarawakSIBU" class="list-group-item"></div>
-                        <div id="SabahSarawakOther" class="list-group-item"></div>
+                        <div  id="SabahSarawakOther" class="list-group-item"></div>
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label for="inputType" class="col-sm-4 control-label" id="inputRegionLabel">Please select type:</label>
+                    <label for="inputType" class="col-sm-4 control-label" id="inputRegionLabel">请选择运输类型:</label>
                     <div class="col-sm-8">
                         <select id="comboxTransType" class="form-control">
-                            <option value="0">Air Transport - Normal</option>
-                            <option value="1">Air Transport - Sensibility</option>
-                            <option value="2">Marine Shipping - Small Package</option>
-                            <option value="3">Marine Shipping - Big Package</option>
+                            <option value="0">东马空运 - 普货</option>
+                            <option value="1">东马空运 - 敏感货</option>
+                            <option value="2">东马海运 - 海运小包</option>
+                            <option value="3">东马海运 - 海运大包</option>
                         </select>
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">Please select region:</label>
+                    <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">请选择运输地区:</label>
                     <div class="col-sm-8">
                         <select id="comboxRegionType" class="form-control">
-                            <option value="0">Sabah</option>
-                            <option value="1">Sarawak</option>
-                            <option value="2">Sabah Others</option>
-                            <option value="3">Sarawak Others</option>
+                            <option value="0">沙巴</option>
+                            <option value="1">沙捞越</option>
+                            <option value="2">沙巴 其他地区</option>
+                            <option value="3">沙捞越 其他地区</option>
                         </select>
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label for="inputWeight" class="col-sm-4 control-label" id="inputWeightLabel">Please enter the weight (kg):</label>
+                    <label for="inputWeight" class="col-sm-4 control-label" id="inputWeightLabel">请输入重量 (kg):</label>
                     <div id="inputWeigetDiv" class="col-sm-8">
-                        <input id="numberInputWeight" type="number" class="form-control" id="inputWeight" placeholder="Weight/kg">
+                        <input id="numberInputWeight" type="number" class="form-control" id="inputWeight" placeholder="重量/kg">
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">Please enter the size (cm):</label>
+                    <label for="inputRegion" class="col-sm-4 control-label" id="inputRegionLabel">请输入尺寸 (cm):</label>
                     <div class="col-sm-8">
-                        <input id="numberInputLength" type="number" class="form-control" id="inputLength" placeholder="Length/cm">
+                        <input id="numberInputLength" type="number" class="form-control" id="inputLength" placeholder="长/cm">
                         <hr>
-                        <input id="numberInputWidth" type="number" class="form-control" id="inputWidth" placeholder="Width/cm">
+                        <input id="numberInputWidth" type="number" class="form-control" id="inputWidth" placeholder="宽/cm">
                         <hr>
-                        <input id="numberInputHeight" type="number" class="form-control" id="inputHeight" placeholder="Height/cm">
+                        <input id="numberInputHeight" type="number" class="form-control" id="inputHeight" placeholder="高/cm">
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label for="inputCount" class="col-sm-4 control-label" id="inputCountLabel">Please enter count:</label>
+                    <label for="inputCount" class="col-sm-4 control-label" id="inputCountLabel">请输入件数:</label>
                     <div class="col-sm-8">
-                        <input id="numberInputCount" type="number" class="form-control" id="inputCount" placeholder="Count">
+                        <input id="numberInputCount" type="number" class="form-control" id="inputCount" placeholder="件">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="textFare" class="col-sm-4 control-label" id="textFareLabel">The fare:</label>
+                    <label for="textFare" class="col-sm-4 control-label" id="textFareLabel">运费:</label>
                     <div class="col-sm-8">
-                        <label for="textFare" class="control-label" id="textFareRMBSymbol">MYR - RM</label>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">林吉特 - RM</label>
                         <label id="textCYM" for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
                         <br>
-                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CNY - ¥</label>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">人民币 - ¥</label>
                         <label id="textCNY" for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="textFare" class="col-sm-4 control-label" id="textFareLabel">Current exchange rate:</label>
+                    <label for="textFare" class="col-sm-4 control-label" id="textFareLabel">当前汇率:</label>
                     <div class="col-sm-8">
-                        <label for="textFare" class="control-label" id="textFareRMBSymbol">CYM - CNY, </label>
+                        <label for="textFare" class="control-label" id="textFareRMBSymbol">林吉特 - 人民币, </label>
                         <label id="textExchangeRate" for="textFare" class="control-label" id="textFareRMBSymbol">0</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-10"><input id="calcButton" type="button" class="btn btn-primary btn-block" value="Calculate Now"></input></div>
+                    <div class="col-sm-10"><input id="calcButton" type="button" class="btn btn-primary btn-block" value="开始计算"></input></div>
                 </div>
             </form>
             <div class="col-xs-2"></div>
