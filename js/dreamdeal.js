@@ -287,7 +287,7 @@ $(document).ready(function() {
         });
     });
 
-    $.get("https://api.it120.cc/gooking/forex/rate?fromCode=CNY&toCode=MYR",function(data,status){
+    $.get("https://api.it120.cc/gooking/forex/rate?fromCode=MYR&toCode=CNY",function(data,status){
         $('#textExchangeRate').text(data.data.rate);
     });
     genPriceTableShow();
